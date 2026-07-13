@@ -1,4 +1,4 @@
-# Wanderlust 🏡
+# Wanderlust 
 
 A full-stack Airbnb-inspired web application built using Node.js, Express.js, MongoDB, EJS, and Bootstrap.
 
