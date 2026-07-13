@@ -19,4 +19,4 @@ A full-stack Airbnb-inspired web application built using Node.js, Express.js, Mo
 - Cloudinary
 
 ## Project By
-Divyanjali
+- Divyanjali
