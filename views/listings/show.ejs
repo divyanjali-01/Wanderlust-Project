@@ -89,12 +89,13 @@
                         data-rating="<%= review.rating %>">
                     </p>
                     <p class="card-text mb-3"><%= review.review %></p>
-    
+                <% if(currentUser && listing.owner._id.equals(currentUser._id)) {%>
                     <form 
                         method="POST" action="/listings/<%=listing._id%>/reviews/<%=review._id%>?_method=DELETE " class="delete-form mb-3">
                         <!-- <button class="btn btn-dark">Delete</button> -->
                         <button class="btn btn smbtn-danger" type="submit" style="border:none;background-color:white;"><span class="material-symbols-outlined">delete</span></button>
                     </form>
+                    <% } %>
                 </div>
             </div>
             <% }%>
