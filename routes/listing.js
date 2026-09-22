@@ -8,7 +8,6 @@ import multer from "multer";
 import {storage} from "../cloudConfig.js";
 const upload = multer({storage});
 
-
 router
     .route("/")
     .get(wrapAsync(listingController.index))
@@ -19,9 +18,7 @@ router
         wrapAsync(listingController.createListing)//create route
     )
     
-
 router.get("/new", isLoggedIn, listingController.renderNewForm);
-
 
 router
 .route("/:id")
